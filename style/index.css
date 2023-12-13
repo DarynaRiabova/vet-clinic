@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red;*/
+}
+:root {
+  scroll-behavior: smooth;
+  --text-title-color: #00214d;
+  --button-logo-color: #3781e3;
+  --background-color: #d5e5f5;
+  --main-color: #3a3a3a;
+  --section-color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/*font-family: 'Pacifico', cursive;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;*/
+/* header */
+html {
+  background-color: var(--background-color);
+
+  /*overflow: auto;*/
+}
+body {
+  margin: 15px;
+}
+img {
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0;
+  flex-wrap: wrap;
+}
+.header__logo a {
+  font-size: 32px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  color: var(--button-logo-color);
+  line-height: 48px;
+  padding-right: 10px;
+  text-align: center;
+}
+.header__nav a {
+  color: var(--text-title-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  padding-right: 5px;
+}
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+/*  first section */
+
+.vet-website__text {
+  text-align: center;
+}
+.vet-website__paragraph {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--text-title-color);
+  font-family: Plus Jakarta Sans;
+  letter-spacing: 0.085em;
+}
+.vet-website__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--text-title-color);
+  transition: width 200ms ease;
+  padding-bottom: 8px;
+}
+.vet-website__intro-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--main-color);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.vet-website__intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0px;
+}
+
+.vet-website__image {
+  max-width: 70vw;
+  transition: width 200ms ease;
+}
+
+@media (min-width: 650px) {
+  .header__logo a {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .header__nav a {
+    font-size: 20px;
+    line-height: 36px;
+    padding-right: 15px;
+  }
+  .vet-website__text {
+    text-align: left;
+    padding: 0 30px;
+  }
+  .vet-website__intro {
+    flex-wrap: nowrap;
+    padding: 2vw 3vw;
+  }
+  .vet-website__image {
+    max-width: 30vw;
+  }
+  .vet-website__title {
+    padding-bottom: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    margin-top: 26px 0;
+  }
+  .header__logo a {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .header__nav a {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .header__menu-item {
+    margin-right: 20px;
+  }
+  .vet-website__image {
+    max-width: 30vw;
+    transition: width 200ms ease;
+    padding: 0 15px;
+  }
+  .vet-website__text {
+    text-align: left;
+    padding: 0 60px;
+  }
+
+  .vet-website__title {
+    font-size: 60px;
+    line-height: 85px;
+  }
+}
+@media (min-width: 1440px) {
+  .vet-website__intro-text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .vet-website__paragraph {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .vet-website__title {
+    font-size: 70px;
+    line-height: 105px;
+  }
+
+  .header__menu-item {
+    margin-right: 20px;
+  }
+  .header {
+    margin-top: 26px;
+  }
+  .header__logo a {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .vet-website__title {
+    padding-bottom: 16px;
+  }
+}
