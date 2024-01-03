@@ -11,33 +11,39 @@
   --background-color: #d5e5f5;
   --main-color: #3a3a3a;
   --section-color: #ffffff;
+  --background-color-logo: #e1ecfb;
+  --section-offer-color: #e9f4ff;
+  --background-newsletter: #cadff8;
+  --error-color: #f41c1c;
+  --success-color: #17f929;
   font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--background-color);
 }
-
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 a {
   text-decoration: none;
 }
 /*font-family: 'Pacifico', cursive;
 font-family: 'Plus Jakarta Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
-font-family: 'Quicksand', sans-serif;*/
-/* header */
-html {
-  background-color: var(--background-color);
+font-family: 'Quicksand', sans-serif;
+use rem. not em*/
 
-  /*overflow: auto;*/
-}
-body {
-  margin: 15px;
-}
+/* header */
+
 img {
   width: 100%;
+  display: block;
 }
+
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 5px 0;
+  padding: 5px 2rem;
   flex-wrap: wrap;
 }
 .header__logo a {
@@ -73,8 +79,8 @@ img {
   font-size: 18px;
   line-height: 36px;
   color: var(--text-title-color);
-  font-family: Plus Jakarta Sans;
-  letter-spacing: 0.085em;
+  font-family: "Plus Jakarta Sans";
+  letter-spacing: 0.085rem;
 }
 .vet-website__title {
   font-weight: 700;
@@ -90,7 +96,7 @@ img {
   line-height: 32px;
   color: var(--main-color);
   font-family: "Poppins", sans-serif;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
 }
 
 .vet-website__intro {
@@ -98,12 +104,250 @@ img {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 15px 0px;
+  padding: 15px 2rem;
 }
 
 .vet-website__image {
   max-width: 70vw;
   transition: width 200ms ease;
+}
+/* offered */
+
+.services-offered__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.services-offered__item {
+  background-color: var(--section-color);
+  max-width: 350px;
+  height: 350px;
+  margin: 32px;
+  border-radius: 5%;
+}
+.services-offered__logo-background {
+  width: 80px;
+  height: 80px;
+  background-color: var(--background-color-logo);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 32px;
+  margin-top: 32px;
+}
+.services-offered__logo {
+  max-width: 40px;
+  border-radius: 50%;
+  border-color: var(--background-color-logo);
+}
+.services-offered__title {
+  font-weight: 500;
+  font-size: 34px;
+  text-align: center;
+  color: var(--text-title-color);
+  padding: 40px 0;
+}
+.services-offered__description {
+  font-size: 18px;
+  font-family: "Poppins";
+  text-align: center;
+  color: var(--main-color);
+  letter-spacing: 0.05rem;
+  opacity: 95%;
+  padding-bottom: 24px;
+}
+.services-offered__item-title {
+  font-size: 24px;
+  text-align: left;
+  color: var(--text-title-color);
+  padding: 8px 34px;
+  padding-top: 80px;
+}
+.services-offered__item-description {
+  font-size: 18px;
+  text-align: left;
+  font-family: "Poppins";
+  color: var(--main-color);
+  opacity: 75%;
+  padding: 0 34px;
+}
+/*best vet*/
+.best-vet__image {
+  max-width: 408px;
+}
+.best-vet {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-direction: column;
+}
+.best-vet__title {
+  font-size: 64px;
+  color: var(--text-title-color);
+}
+.best-vet__description {
+  font-size: 20px;
+  color: var(--main-color);
+  font-family: "Poppins";
+  line-height: 35px;
+}
+.best-vet__content {
+  text-align: center;
+  padding: 15px 2rem;
+}
+.best-vet__contact-link {
+  color: var(--section-color);
+  background-color: var(--button-logo-color);
+  font-size: 22px;
+  line-height: 33px;
+  border-radius: 16px;
+  padding: 20px;
+  border: var(--button-logo-color) solid 2px;
+  margin-top: 30px;
+}
+.best-vet__button {
+  padding: 35px 0;
+}
+/*patient-reviews*/
+.patient-reviews,
+.newsletter,
+.services-offered {
+  background-color: var(--section-offer-color);
+}
+.patient-reviews__background {
+  padding: 61px 0;
+}
+.patient-reviews__list {
+  display: flex;
+  flex-direction: column;
+}
+.patient-reviews__item {
+  padding: 90px;
+  background-color: var(--section-color);
+
+  margin: 2px;
+}
+.patient-reviews__image {
+  max-width: 120px;
+}
+.patient-reviews__title {
+  font-size: 48px;
+  color: var(--text-title-color);
+  text-align: center;
+  padding: 40px 0;
+}
+.patient-reviews__category {
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--text-title-color);
+  text-align: center;
+  padding: 30px 0;
+}
+.patient-reviews__text {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--main-color);
+  text-align: center;
+  font-family: "Poppins";
+  opacity: 90%;
+}
+/* vet-carousel*/
+.vet-carousel {
+  padding: 40px 0 80px 0;
+}
+
+.vet-carousel__items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.vet-carousel__item {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+}
+.vet-carousel__image {
+  max-height: 622px;
+}
+.vet-carousel__title {
+  font-size: 48px;
+  line-height: 72px;
+  color: var(--text-title-color);
+  padding: 50px 0;
+  text-align: center;
+  font-weight: 700;
+}
+.vet-carousel__name {
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--text-title-color);
+  font-weight: 700;
+  padding: 10px 0;
+}
+.vet-carousel__indicator {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--main-color);
+}
+/*newsletter*/
+.newsletter {
+  padding: 128px 84px 141px 84px;
+}
+.newsletter__content {
+  background-color: var(--background-newsletter);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px;
+}
+.newsletter__title {
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: var(--text-title-color);
+  font-weight: 400;
+  padding: 20px;
+}
+.newsletter__input {
+  border: 2px solid var(--button-logo-color);
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px;
+  width: 100%;
+}
+.newsletter__button-submit {
+  cursor: pointer;
+  color: var(--section-color);
+  background-color: var(--text-title-color);
+  font-size: 24px;
+  outline: none;
+  border: 0;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.newsletter__form-control.error input,
+.newsletter__form-control.error textarea {
+  border-color: var(--error-color);
+}
+.newsletter__form-control.success input,
+.newsletter__form-control.success textarea {
+  border-color: var(--success-color);
+}
+
+/*footer*/
+.footer__social-link {
+  max-width: 24px;
 }
 
 @media (min-width: 650px) {
@@ -118,11 +362,10 @@ img {
   }
   .vet-website__text {
     text-align: left;
-    padding: 0 30px;
+    margin: 0 20px;
   }
   .vet-website__intro {
     flex-wrap: nowrap;
-    padding: 2vw 3vw;
   }
   .vet-website__image {
     max-width: 30vw;
@@ -130,10 +373,12 @@ img {
   .vet-website__title {
     padding-bottom: 12px;
   }
+  /* offered */
 }
 @media (min-width: 1024px) {
   .header {
     margin-top: 26px 0;
+    padding: 5px 3rem;
   }
   .header__logo a {
     font-size: 32px;
@@ -148,20 +393,54 @@ img {
     margin-right: 20px;
   }
   .vet-website__image {
-    max-width: 30vw;
+    max-width: 35vw;
     transition: width 200ms ease;
-    padding: 0 15px;
+    padding-left: 35px;
+    padding-right: 25px;
   }
   .vet-website__text {
     text-align: left;
-    padding: 0 60px;
+    padding-right: 60px;
   }
 
   .vet-website__title {
     font-size: 60px;
     line-height: 85px;
   }
+  .vet-website__intro {
+    padding: 0 3rem;
+  }
+  /* offered */
+
+  .services-offered__title {
+    font-size: 48px;
+  }
+  .services-offered__description {
+    font-size: 24px;
+  }
+  /*best-vet*/
+  .best-vet {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 61px 40px;
+    flex-direction: row;
+  }
+  .best-vet__content {
+    text-align: left;
+    width: 50%;
+    max-width: 568px;
+    padding: 0;
+  }
+  .best-vet__title {
+    padding: 32px 61px 32px 0;
+  }
+  /* patient-review*/
+  .patient-reviews__list {
+    flex-direction: row;
+  }
 }
+
 @media (min-width: 1440px) {
   .vet-website__intro-text {
     font-size: 24px;
@@ -189,4 +468,16 @@ img {
   .vet-website__title {
     padding-bottom: 16px;
   }
+  .header__nav a {
+    padding-right: 64px;
+  }
+  /* vet-carousel*/
+  .vet-carousel {
+    padding: 50px 0 100px 0;
+  }
+
+  .vet-carousel__image {
+    max-height: 722px;
+  }
 }
+/*offered */

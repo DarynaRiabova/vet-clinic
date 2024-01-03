@@ -13,7 +13,7 @@
     <title>Vet clinic</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <span class="header__logo"><a href="#">Our Pet</a></span>
       <nav class="header__nav">
         <ul class="header__menu">
@@ -36,7 +36,7 @@
       </nav>
     </header>
     <main class="vet-website">
-      <section class="vet-website__intro">
+      <section class="vet-website__intro container">
         <div class="vet-website__text">
           <p class="vet-website__paragraph">Veterinary Clinic</p>
           <h1 class="vet-website__title">
@@ -58,13 +58,15 @@
         <p class="services-offered__description">
           We offer a wide range of services which includes the following below
         </p>
-        <div class="services-offered__items">
+        <div class="services-offered__items container">
           <div class="services-offered__item">
-            <img
-              src="img/sound-logo.png"
-              alt="Radiology Assistant Logo"
-              class="services-offered__image"
-            />
+            <div class="services-offered__logo-background">
+              <img
+                src="img/sound-logo.png"
+                alt="Radiology Assistant Logo"
+                class="services-offered__logo"
+              />
+            </div>
             <p class="services-offered__item-title">Radiology Assistant</p>
             <p class="services-offered__item-description">
               Radiology is the medical discipline that uses radiology to
@@ -72,11 +74,13 @@
             </p>
           </div>
           <div class="services-offered__item">
-            <img
-              src="img/ambulance-logo.png"
-              alt="Ambulance Service Logo"
-              class="services-offered__logo"
-            />
+            <div class="services-offered__logo-background">
+              <img
+                src="img/ambulance-logo.png"
+                alt="Ambulance Service Logo"
+                class="services-offered__logo"
+              />
+            </div>
             <p class="services-offered__item-title">Ambulance Service</p>
             <p class="services-offered__item-description">
               We are just a phone call away. we have standby ambulances to help
@@ -84,11 +88,13 @@
             </p>
           </div>
           <div class="services-offered__item">
-            <img
-              src="img/dental-logo.png"
-              alt=" Dental Logo"
-              class="services-offered__logo"
-            />
+            <div class="services-offered__logo-background">
+              <img
+                src="img/dental-logo.png"
+                alt=" Dental Logo"
+                class="services-offered__logo"
+              />
+            </div>
             <p class="services-offered__item-title">Dental Care Service</p>
             <p class="services-offered__item-description">
               All animals should have healthy teeths , so we ensure to provide
@@ -96,11 +102,13 @@
             </p>
           </div>
           <div class="services-offered__item">
-            <img
-              src="img/hospital-logo.png"
-              alt="Hospital Logo"
-              class="services-offered__logo"
-            />
+            <div class="services-offered__logo-background">
+              <img
+                src="img/hospital-logo.png"
+                alt="Hospital Logo"
+                class="services-offered__logo"
+              />
+            </div>
             <p class="services-offered__item-title">Surgical Operation</p>
             <p class="services-offered__item-description">
               We provide surgical operations to all animals that are in need of
@@ -108,23 +116,28 @@
             </p>
           </div>
           <div class="services-offered__item">
-            <img
-              src="img/partution-logo.png"
-              alt=" Partution Logo"
-              class="services-offered__logo"
-            />
+            <div class="services-offered__logo-background">
+              <img
+                src="img/partution-logo.png"
+                alt=" Partution Logo"
+                class="services-offered__logo"
+              />
+            </div>
             <p class="services-offered__item-title">Partution service</p>
             <p class="services-offered__item-description">
               Our maternity service provides services with our private and
               hygenic delivery
             </p>
           </div>
+
           <div class="services-offered__item">
-            <img
-              src="img/hotel-logo.png"
-              alt=" Hotel For Pet Logo"
-              class="services-offered__logo"
-            />
+            <div class="services-offered__logo-background">
+              <img
+                src="img/hotel-logo.png"
+                alt=" Hotel For Pet Logo"
+                class="services-offered__logo"
+              />
+            </div>
             <p class="services-offered__item-title">Pet Hotel service</p>
             <p class="services-offered__item-description">
               Our hotel service works for you when you’re on vacation or at work
@@ -132,103 +145,123 @@
           </div>
         </div>
       </section>
-      <section class="best-vet">
+      <section class="best-vet container">
         <div class="best-vet__image">
           <img src="img/the-best-vet-man.png" alt="Photo of our vet doctor" />
         </div>
         <div class="best-vet__content">
           <h2 class="best-vet__title">The Best Veterinarian in all Branches</h2>
           <p class="best-vet__description">
-            Our veterinarian is an expert in their field, graduated from the
-            best universities, and is always ready to provide the best service.
+            All veternarinas are expersts in their fiields and graduated from
+            the best universities , all of our veetanarians are always ready to
+            work and eliver the best dservice.
           </p>
-          <a href="#" class="best-vet__contact-link">Contact Us</a>
+          <div class="best-vet__button">
+            <a href="#" class="best-vet__contact-link">Contact Us</a>
+          </div>
         </div>
       </section>
       <section class="patient-reviews">
-        <h2 class="patient-reviews__title">What do our Patients Say?</h2>
-        <div class="patient-reviews__list">
-          <div class="patient-reviews__item">
-            <img
-              src="img/comment.png"
-              alt="Patient Review"
-              class="patient-reviews__image"
-            />
-            <p class="patient-reviews__category">Experienced Doctors</p>
-            <p class="patient-reviews__text">
-              It was a really wonderful experience, and I thank the whole team.
-              I enjoyed the services from the doctors, and they were so
-              experienced beyond my expectations. I am definitely staying.
-            </p>
-          </div>
-          <div class="patient-reviews__item">
-            <img
-              src="img/comment.png"
-              alt="Patient Review"
-              class="patient-reviews__image"
-            />
-            <p class="patient-reviews__category">Inexpensive Service</p>
-            <p class="patient-reviews__text">
-              I was not expecting the service to be that cheap considering that
-              they did a really good job treating my sick dog. I really enjoyed
-              the service, and I'll be using it more.
-            </p>
+        <div class="patient-reviews__background container">
+          <h2 class="patient-reviews__title">What do our Patients Say?</h2>
+          <div class="patient-reviews__list">
+            <div class="patient-reviews__item">
+              <img
+                src="img/comment.png"
+                alt="Patient Review"
+                class="patient-reviews__image"
+              />
+              <p class="patient-reviews__category">Experienced Doctors</p>
+              <p class="patient-reviews__text">
+                It was a really wonderful experience, and I thank the whole
+                team. I enjoyed the services from the doctors, and they were so
+                experienced beyond my expectations. I am definitely staying.
+              </p>
+            </div>
+            <div class="patient-reviews__item">
+              <img
+                src="img/comment.png"
+                alt="Patient Review"
+                class="patient-reviews__image"
+              />
+              <p class="patient-reviews__category">Inexpensive Service</p>
+              <p class="patient-reviews__text">
+                I was not expecting the service to be that cheap considering
+                that they did a really good job treating my sick dog. I really
+                enjoyed the service, and I'll be using it more.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="vet-carousel">
-        <div class="vet-carousel__item">
-          <img
-            src="img/the-best-vet-man.png"
-            alt="Photo of our vet doctor"
-            class="vet-carousel__image"
-          />
-          <span class="vet-carousel__indicator"></span>
-          <span class="vet-carousel__indicator"></span>
-        </div>
-        <div class="vet-carousel__item">
-          <img
-            src="img/photo-vet-man.png"
-            alt="Photo of our vet doctor"
-            class="vet-carousel__image"
-          />
-          <span class="vet-carousel__indicator"></span>
-          <span class="vet-carousel__indicator"></span>
-        </div>
-        <div class="vet-carousel__item">
-          <img
-            src="img/vet-woman.png"
-            alt="Photo of our vet doctor"
-            class="vet-carousel__image"
-          />
-          <span class="vet-carousel__indicator"></span>
-          <span class="vet-carousel__indicator"></span>
-        </div>
-        <div class="vet-carousel__item">
-          <img
-            src="img/vet-woman.png"
-            alt="Photo of our vet doctor"
-            class="vet-carousel__image"
-          />
-          <span class="vet-carousel__indicator"></span>
-          <span class="vet-carousel__indicator"></span>
+      <section class="vet-carousel container">
+        <p class="vet-carousel__title">Meet Our Veterinarians</p>
+        <div class="vet-carousel__items">
+          <div class="vet-carousel__item">
+            <img
+              src="img/second-vet-man.png"
+              alt="Photo of our vet doctor"
+              class="vet-carousel__image"
+            />
+            <span class="vet-carousel__name">David Manchester</span>
+            <span class="vet-carousel__indicator">Expert Vetenarian</span>
+          </div>
+          <div class="vet-carousel__item">
+            <img
+              src="img/photo-vet-man.png"
+              alt="Photo of our vet doctor"
+              class="vet-carousel__image"
+            />
+            <span class="vet-carousel__name">Sam Mark</span>
+            <span class="vet-carousel__indicator">Expert Vetenarian</span>
+          </div>
+          <div class="vet-carousel__item">
+            <img
+              src="img/vet-woman.png"
+              alt="Photo of our vet doctor"
+              class="vet-carousel__image"
+            />
+            <span class="vet-carousel__name">Esther Smith</span>
+            <span class="vet-carousel__indicator">Expert Vetenarian</span>
+          </div>
         </div>
       </section>
       <section class="newsletter">
-        <div class="newsletter__content">
-          <h2 class="newsletter__title">Subscribe to our Newsletter</h2>
-          <form class="newsletter__form">
-            <input
-              type="email"
-              class="newsletter__input"
-              placeholder="Your email"
-            />
-            <input type="submit" class="newsletter__submit" value="Subscribe" />
+        <div class="newsletter__content container">
+          <h2 class="newsletter__title">Subscribe to our News Letter</h2>
+          <form class="newsletter__form" id="form">
+            <div class="newsletter__form-control">
+              <input
+                type="text"
+                id="name"
+                class="newsletter__input"
+                placeholder="Yout Name"
+              />
+            </div>
+            <div class="newsletter__form-control">
+              <input
+                type="email"
+                id="email"
+                class="newsletter__input"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="newsletter__form-control">
+              <textarea
+                id="message"
+                rows="4"
+                class="newsletter__input"
+                placeholder="How can we help you?"
+              ></textarea>
+            </div>
+            <button type="submit" class="newsletter__button-submit">
+              Send
+            </button>
           </form>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer__logo"><a href="#">Our Pets</a></div>
       <div class="footer__section">
         <p class="footer__section-title">Company</p>
@@ -250,16 +283,23 @@
         <span class="footer__info">team@OsirisRealEstate.com</span>
       </div>
       <div class="footer__social">
-        <a href="#" class="footer__social-link"
-          ><img src="img/facebook.png" alt="Facebook"
+        <a href="#"
+          ><img
+            src="img/facebook.png"
+            alt="Facebook"
+            class="footer__social-link"
         /></a>
-        <a href="#" class="footer__social-link"
-          ><img src="img/mail.png" alt="Mail"
+        <a href="#"
+          ><img src="img/mail.png" alt="Mail" class="footer__social-link"
         /></a>
-        <a href="#" class="footer__social-link"
-          ><img src="img/instagram.png" alt="Instagram"
+        <a href="#"
+          ><img
+            src="img/instagram.png"
+            alt="Instagram"
+            class="footer__social-link"
         /></a>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
