@@ -229,11 +229,18 @@
       <section class="newsletter">
         <div class="newsletter__content container">
           <h2 class="newsletter__title">Subscribe to our News Letter</h2>
-          <form class="newsletter__form" id="form">
+          <form
+            class="newsletter__form"
+            id="form"
+            target="_blank"
+            action="https://formsubmit.co/darinar474@gmail.com"
+            method="POST"
+          >
             <div class="newsletter__form-control">
               <input
                 type="text"
                 id="name"
+                name="name"
                 class="newsletter__input"
                 placeholder="Yout Name"
               />
@@ -242,14 +249,17 @@
               <input
                 type="email"
                 id="email"
+                name="email"
                 class="newsletter__input"
                 placeholder="Your Email"
+                required
               />
             </div>
             <div class="newsletter__form-control">
               <textarea
                 id="message"
                 rows="4"
+                name="message"
                 class="newsletter__input"
                 placeholder="How can we help you?"
               ></textarea>
